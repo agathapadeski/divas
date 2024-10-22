@@ -21,4 +21,6 @@ footer{
 #container{
     display: flex;
     padding: 4rem;
+    gap: 3rem;
+    flex-wrap: wrap;
 }
