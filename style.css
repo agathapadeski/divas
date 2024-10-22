@@ -10,6 +10,17 @@ body{
     background-color: var(--fundo);
     margin: 0;
 }
+header{
+    background-color: (--preto));
+    color: var(--branco);
+    padding: 2rem;
+    display:flex;
+    justify-content: space-around;
+}
+header{
+    color: var(--branco);
+    text-decoration: none;
+}
 footer{
     position: fixed;
     bottom: 0;
@@ -23,4 +34,42 @@ footer{
     padding: 4rem;
     gap: 3rem;
     flex-wrap: wrap;
+}
+.cartao{
+    flex-grow: 1;
+    flex-basis: calc(33% - 6rem);
+    margin: 1rem;
+    height: 20rem;
+}
+.conteudo-cartao{
+    background-color: var(--cartao-frente);
+    text-align: center;
+    height: 100%;
+    transform-style:preserve-3d ;
+    transition: transform 300ms ease-in-out;
+}
+.conteudo-cartao h3{
+    color: var(--destaque);
+    border: 1px solid var(--destaque);
+    position: absolute;
+    text-align: left;
+    margin: 0.6rem;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+    front-size: 1vw;
+}
+.conteudo-cartao p{
+    margin-top: 4rem;
+    front-size: 1.4rem;
+    padding: 2rem;
+}
+.pergunta-cartao p{
+    front-weight: 500;
+}
+.resposta-cartao{
+    front-weight: 700;
+    color: var(--destaque);
+}
+.cartao.active .conteudo-cartao{
+    
 }
