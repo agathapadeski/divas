@@ -1,5 +1,5 @@
 function criacartao(categoria,pergunta,resposta){
-    let container = document.getElement('container');
+    let container = document.getElementById('container');
     let cartao = document.createElement('article');
     cartao.className = 'cartao';}
 cartao.innerHTML =
@@ -19,6 +19,6 @@ cartao.innerHTML =
      cartao.classList.toggle('active',cartao.respostaEstaVisivel);
 }
 
-   cartao.addEventLister('click', viracartao);
+   cartao.addEventLister('click', viracartao); {
    container.appendChild(cartao);
 }
